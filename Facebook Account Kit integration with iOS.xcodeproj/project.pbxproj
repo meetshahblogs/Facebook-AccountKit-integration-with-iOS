@@ -10,6 +10,11 @@
 		15BD365C201430FC00EAFCF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BD365B201430FC00EAFCF3 /* AppDelegate.m */; };
 		15BD3664201430FC00EAFCF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15BD3663201430FC00EAFCF3 /* Assets.xcassets */; };
 		15BD366A201430FC00EAFCF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BD3669201430FC00EAFCF3 /* main.m */; };
+		15BD3682201456DF00EAFCF3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BD3680201456DF00EAFCF3 /* LoginViewController.m */; };
+		15BD3683201456DF00EAFCF3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15BD3681201456DF00EAFCF3 /* LoginViewController.xib */; };
+		15BD368720145A8300EAFCF3 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BD368520145A8300EAFCF3 /* AccountViewController.m */; };
+		15BD368820145A8300EAFCF3 /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15BD368620145A8300EAFCF3 /* AccountViewController.xib */; };
+		15BD368E2014690F00EAFCF3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15BD368D2014690F00EAFCF3 /* MobileCoreServices.framework */; };
 		FFA492DCA3705BB6E628AF71 /* libPods-Facebook Account Kit integration with iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0D31CEE4B1377C2EF042DD /* libPods-Facebook Account Kit integration with iOS.a */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +25,13 @@
 		15BD3663201430FC00EAFCF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15BD3668201430FC00EAFCF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15BD3669201430FC00EAFCF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		15BD367F201456DF00EAFCF3 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		15BD3680201456DF00EAFCF3 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		15BD3681201456DF00EAFCF3 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		15BD368420145A8300EAFCF3 /* AccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		15BD368520145A8300EAFCF3 /* AccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		15BD368620145A8300EAFCF3 /* AccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
+		15BD368D2014690F00EAFCF3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		894E3891B6F7F87BEDD90663 /* Pods-Facebook Account Kit integration with iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook Account Kit integration with iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Facebook Account Kit integration with iOS/Pods-Facebook Account Kit integration with iOS.release.xcconfig"; sourceTree = "<group>"; };
 		8B0D31CEE4B1377C2EF042DD /* libPods-Facebook Account Kit integration with iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Facebook Account Kit integration with iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEA8201798A4643D93A07D7A /* Pods-Facebook Account Kit integration with iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook Account Kit integration with iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Facebook Account Kit integration with iOS/Pods-Facebook Account Kit integration with iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -30,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15BD368E2014690F00EAFCF3 /* MobileCoreServices.framework in Frameworks */,
 				FFA492DCA3705BB6E628AF71 /* libPods-Facebook Account Kit integration with iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +92,12 @@
 		15BD36712014312100EAFCF3 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				15BD367F201456DF00EAFCF3 /* LoginViewController.h */,
+				15BD3680201456DF00EAFCF3 /* LoginViewController.m */,
+				15BD3681201456DF00EAFCF3 /* LoginViewController.xib */,
+				15BD368420145A8300EAFCF3 /* AccountViewController.h */,
+				15BD368520145A8300EAFCF3 /* AccountViewController.m */,
+				15BD368620145A8300EAFCF3 /* AccountViewController.xib */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -95,6 +114,7 @@
 		EF91FBE70D24599F3737DFFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				15BD368D2014690F00EAFCF3 /* MobileCoreServices.framework */,
 				8B0D31CEE4B1377C2EF042DD /* libPods-Facebook Account Kit integration with iOS.a */,
 			);
 			name = Frameworks;
@@ -161,6 +181,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15BD3683201456DF00EAFCF3 /* LoginViewController.xib in Resources */,
+				15BD368820145A8300EAFCF3 /* AccountViewController.xib in Resources */,
 				15BD3664201430FC00EAFCF3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,9 +214,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Facebook Account Kit integration with iOS/Pods-Facebook Account Kit integration with iOS-resources.sh",
+				"${PODS_ROOT}/AccountKit/AccountKitStrings.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -225,6 +250,8 @@
 			files = (
 				15BD366A201430FC00EAFCF3 /* main.m in Sources */,
 				15BD365C201430FC00EAFCF3 /* AppDelegate.m in Sources */,
+				15BD368720145A8300EAFCF3 /* AccountViewController.m in Sources */,
+				15BD3682201456DF00EAFCF3 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

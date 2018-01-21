@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AccountKit/AKFAccountKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, AKFViewControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property AKFAccountKit *accountKit;
 
 
 @end

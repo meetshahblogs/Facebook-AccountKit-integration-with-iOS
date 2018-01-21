@@ -10,11 +10,11 @@
 		1C76817FA5353D989D7BC33E8C5997B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409899CE1143F81E8130E2069D59605B /* CoreGraphics.framework */; };
 		29D3F69F0B4284932D6B94F89D13EECB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */; };
 		2D82079E6A7B231D44134D279DF7C162 /* Pods-Facebook Account Kit integration with iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A811B1C6C3F4103AB4B927613051BAE8 /* Pods-Facebook Account Kit integration with iOS-dummy.m */; };
-		536F7D0550F5FD9F5869CEC995CFEE9B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 30858F8F84BD7A73D99478028C4C0E9A /* MBProgressHUD.m */; };
+		536F7D0550F5FD9F5869CEC995CFEE9B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA163CEC1AEACA39A6C246AE465DFF0 /* MBProgressHUD.m */; };
 		7291E906AE8A3C1F92183154FE65DCDD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7BDB2580B244756CFA046131516EF2 /* QuartzCore.framework */; };
 		93F12B05D8333C37D9CBEA3D1782CC04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */; };
-		E5229F5125ACD420659E7B2D19BB30A8 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9895137673E5059F732A42A1E2A66E0B /* MBProgressHUD-dummy.m */; };
-		EA321C98029015AA4895C0B26891D8F8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E67CBBACD85CE50C19C6320AAD17088 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5229F5125ACD420659E7B2D19BB30A8 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5093DF22EAD061BB2F1A13B37A666437 /* MBProgressHUD-dummy.m */; };
+		EA321C98029015AA4895C0B26891D8F8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C1E711DA76D8B41FEBDFFCA7182637E /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,24 +28,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		036D1CBBBAE79E2A7DF05012E75FB659 /* AKFUIManaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFUIManaging.h; path = AccountKit.framework/Headers/AKFUIManaging.h; sourceTree = "<group>"; };
+		0C1E711DA76D8B41FEBDFFCA7182637E /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		1E67CBBACD85CE50C19C6320AAD17088 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		30858F8F84BD7A73D99478028C4C0E9A /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		195DE0FBD368F81EC88A21BFC3FECC0B /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		21E956D75712198983CC0E155248E7EC /* AKFAccessToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFAccessToken.h; path = AccountKit.framework/Headers/AKFAccessToken.h; sourceTree = "<group>"; };
+		2D2221399944C932229632DA5E994BCD /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		33689692DD88D5BDEBA3929A7A27EA6D /* AKFViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFViewController.h; path = AccountKit.framework/Headers/AKFViewController.h; sourceTree = "<group>"; };
+		3D63719445351BA7545B1ABFF285347D /* AKFLoginFlowState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFLoginFlowState.h; path = AccountKit.framework/Headers/AKFLoginFlowState.h; sourceTree = "<group>"; };
 		409899CE1143F81E8130E2069D59605B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		4407B04165847ED6D12ADF293640B492 /* AKFButtonType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFButtonType.h; path = AccountKit.framework/Headers/AKFButtonType.h; sourceTree = "<group>"; };
 		45F9F2D29903A65AC879868E79E57F2B /* Pods-Facebook Account Kit integration with iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Facebook Account Kit integration with iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		492BF81C132CDF6216F87C9D2403A260 /* AccountKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AccountKit.h; path = AccountKit.framework/Headers/AccountKit.h; sourceTree = "<group>"; };
+		5093DF22EAD061BB2F1A13B37A666437 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		561FEEAC96547E48EE2E132D30F20B1A /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMBProgressHUD.a; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5738194BB4A883AF5AE448C893D7EB78 /* Pods-Facebook Account Kit integration with iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Facebook Account Kit integration with iOS.release.xcconfig"; sourceTree = "<group>"; };
+		5B43F6F12FD3F40464006312411F646E /* AKFTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFTheme.h; path = AccountKit.framework/Headers/AKFTheme.h; sourceTree = "<group>"; };
+		5E36391ABA25BB85F168A2722B02B076 /* AKFPhoneNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFPhoneNumber.h; path = AccountKit.framework/Headers/AKFPhoneNumber.h; sourceTree = "<group>"; };
 		5F7BDB2580B244756CFA046131516EF2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		80DB6C08B9B312D2B623E23F6515C0A5 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		6A4C43AA528A832158F86B00879A699E /* AKFError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFError.h; path = AccountKit.framework/Headers/AKFError.h; sourceTree = "<group>"; };
+		6BA163CEC1AEACA39A6C246AE465DFF0 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		703422130558C4A50B4787C73DE3CEB2 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AccountKit.framework; sourceTree = "<group>"; };
+		7049EBFEE43B5625D7E2F5B2C1D57C2B /* AKFAccount.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFAccount.h; path = AccountKit.framework/Headers/AKFAccount.h; sourceTree = "<group>"; };
+		768301D84ED3F8D2336FAD0A528AE1AF /* AKFLoginType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFLoginType.h; path = AccountKit.framework/Headers/AKFLoginType.h; sourceTree = "<group>"; };
 		8359E32F6F829E723BBBFB65E5DED8CE /* libPods-Facebook Account Kit integration with iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Facebook Account Kit integration with iOS.a"; path = "libPods-Facebook Account Kit integration with iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D2957F16257E0FE563DC3D12555A9A /* AKFAccountKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFAccountKit.h; path = AccountKit.framework/Headers/AKFAccountKit.h; sourceTree = "<group>"; };
+		896EAFFBB1C2272C880155ACEE0F986D /* AKFAccountPreferences.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFAccountPreferences.h; path = AccountKit.framework/Headers/AKFAccountPreferences.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9895137673E5059F732A42A1E2A66E0B /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		A5B07F177E02BF734ED0B882EF073B49 /* AKFConfiguring.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFConfiguring.h; path = AccountKit.framework/Headers/AKFConfiguring.h; sourceTree = "<group>"; };
 		A811B1C6C3F4103AB4B927613051BAE8 /* Pods-Facebook Account Kit integration with iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Facebook Account Kit integration with iOS-dummy.m"; sourceTree = "<group>"; };
-		AABE45081325970398177350B3365B5A /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		AAD77E44423ACD3C7C2DB3680E38633F /* Pods-Facebook Account Kit integration with iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Facebook Account Kit integration with iOS-resources.sh"; sourceTree = "<group>"; };
+		AB35DD1464F9A95585727924C57B07B2 /* AccountKitStrings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = AccountKitStrings.bundle; sourceTree = "<group>"; };
 		B872BF440B1293371B4D5B3BB34CC0C5 /* Pods-Facebook Account Kit integration with iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Facebook Account Kit integration with iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BD34A2FC10151B2B4F1BB955B82B7AEB /* AKFUIManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFUIManager.h; path = AccountKit.framework/Headers/AKFUIManager.h; sourceTree = "<group>"; };
+		CB4ABECEDD7EBAA9424149E932B8AEA5 /* AKFSkinManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFSkinManager.h; path = AccountKit.framework/Headers/AKFSkinManager.h; sourceTree = "<group>"; };
+		D693A5D7040B5E2D6C59723C2D5C3CA6 /* AKFResponseType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFResponseType.h; path = AccountKit.framework/Headers/AKFResponseType.h; sourceTree = "<group>"; };
+		D8867B05B0775E771872D1E0AC1B7A79 /* AKFTextPosition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFTextPosition.h; path = AccountKit.framework/Headers/AKFTextPosition.h; sourceTree = "<group>"; };
 		DB5A83819E838E7B76A1938DF307DD25 /* Pods-Facebook Account Kit integration with iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Facebook Account Kit integration with iOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		E8653C3B75A28B4468B5830DF99014B2 /* AKFErrorDetail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFErrorDetail.h; path = AccountKit.framework/Headers/AKFErrorDetail.h; sourceTree = "<group>"; };
 		F6DD1C39CE647ACBD41139C7582DC681 /* Pods-Facebook Account Kit integration with iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Facebook Account Kit integration with iOS-frameworks.sh"; sourceTree = "<group>"; };
+		F892852FD10E721EE00C6F43933956DD /* AKFSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFSettings.h; path = AccountKit.framework/Headers/AKFSettings.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,15 +92,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		077EB30DB6AD0F301EC92B8EAEA22722 /* MBProgressHUD */ = {
+		0E80FFBC72FE4CA467739437AED3902A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1E67CBBACD85CE50C19C6320AAD17088 /* MBProgressHUD.h */,
-				30858F8F84BD7A73D99478028C4C0E9A /* MBProgressHUD.m */,
-				2848C0E8056CB6EE547CD6E0C1780766 /* Support Files */,
+				AB35DD1464F9A95585727924C57B07B2 /* AccountKitStrings.bundle */,
 			);
-			name = MBProgressHUD;
-			path = MBProgressHUD;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
@@ -89,23 +108,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2848C0E8056CB6EE547CD6E0C1780766 /* Support Files */ = {
+		4E838E553144CE0250D53384EA3FFDF4 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				80DB6C08B9B312D2B623E23F6515C0A5 /* MBProgressHUD.xcconfig */,
-				9895137673E5059F732A42A1E2A66E0B /* MBProgressHUD-dummy.m */,
-				AABE45081325970398177350B3365B5A /* MBProgressHUD-prefix.pch */,
+				0C1E711DA76D8B41FEBDFFCA7182637E /* MBProgressHUD.h */,
+				6BA163CEC1AEACA39A6C246AE465DFF0 /* MBProgressHUD.m */,
+				C0E7EE8D1905BC9F6583E9F0A88D3374 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MBProgressHUD";
+			name = MBProgressHUD;
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
-		5836A44A75C427EBF4739C55E2315758 /* Pods */ = {
+		54168A3EC2EC1D98844495F604560293 /* AccountKit */ = {
 			isa = PBXGroup;
 			children = (
-				077EB30DB6AD0F301EC92B8EAEA22722 /* MBProgressHUD */,
+				492BF81C132CDF6216F87C9D2403A260 /* AccountKit.h */,
+				21E956D75712198983CC0E155248E7EC /* AKFAccessToken.h */,
+				7049EBFEE43B5625D7E2F5B2C1D57C2B /* AKFAccount.h */,
+				84D2957F16257E0FE563DC3D12555A9A /* AKFAccountKit.h */,
+				896EAFFBB1C2272C880155ACEE0F986D /* AKFAccountPreferences.h */,
+				4407B04165847ED6D12ADF293640B492 /* AKFButtonType.h */,
+				A5B07F177E02BF734ED0B882EF073B49 /* AKFConfiguring.h */,
+				6A4C43AA528A832158F86B00879A699E /* AKFError.h */,
+				E8653C3B75A28B4468B5830DF99014B2 /* AKFErrorDetail.h */,
+				3D63719445351BA7545B1ABFF285347D /* AKFLoginFlowState.h */,
+				768301D84ED3F8D2336FAD0A528AE1AF /* AKFLoginType.h */,
+				5E36391ABA25BB85F168A2722B02B076 /* AKFPhoneNumber.h */,
+				D693A5D7040B5E2D6C59723C2D5C3CA6 /* AKFResponseType.h */,
+				F892852FD10E721EE00C6F43933956DD /* AKFSettings.h */,
+				CB4ABECEDD7EBAA9424149E932B8AEA5 /* AKFSkinManager.h */,
+				D8867B05B0775E771872D1E0AC1B7A79 /* AKFTextPosition.h */,
+				5B43F6F12FD3F40464006312411F646E /* AKFTheme.h */,
+				BD34A2FC10151B2B4F1BB955B82B7AEB /* AKFUIManager.h */,
+				036D1CBBBAE79E2A7DF05012E75FB659 /* AKFUIManaging.h */,
+				33689692DD88D5BDEBA3929A7A27EA6D /* AKFViewController.h */,
+				B002406724C32D6B258AC0F39E2A978F /* Frameworks */,
+				0E80FFBC72FE4CA467739437AED3902A /* Resources */,
 			);
-			name = Pods;
+			name = AccountKit;
+			path = AccountKit;
 			sourceTree = "<group>";
 		};
 		5A4DBD434EA75DD3EDD3494C46AE6968 /* iOS */ = {
@@ -118,12 +159,21 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		70BBA78A85B2A6756C6ABA3B70CD84E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54168A3EC2EC1D98844495F604560293 /* AccountKit */,
+				4E838E553144CE0250D53384EA3FFDF4 /* MBProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				5836A44A75C427EBF4739C55E2315758 /* Pods */,
+				70BBA78A85B2A6756C6ABA3B70CD84E5 /* Pods */,
 				B9DCF9D3292AADBD63F2B357D6C75722 /* Products */,
 				8E2FBF32D9C15D0FFC14E56CEFE58610 /* Targets Support Files */,
 			);
@@ -137,6 +187,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		B002406724C32D6B258AC0F39E2A978F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				703422130558C4A50B4787C73DE3CEB2 /* AccountKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B9DCF9D3292AADBD63F2B357D6C75722 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +202,17 @@
 				8359E32F6F829E723BBBFB65E5DED8CE /* libPods-Facebook Account Kit integration with iOS.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C0E7EE8D1905BC9F6583E9F0A88D3374 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D2221399944C932229632DA5E994BCD /* MBProgressHUD.xcconfig */,
+				5093DF22EAD061BB2F1A13B37A666437 /* MBProgressHUD-dummy.m */,
+				195DE0FBD368F81EC88A21BFC3FECC0B /* MBProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
 			sourceTree = "<group>";
 		};
 		F3A4C4CB8F7A4B4233344A6337943DB4 /* Pods-Facebook Account Kit integration with iOS */ = {
@@ -268,7 +337,7 @@
 /* Begin XCBuildConfiguration section */
 		000EFF17B2F9F4744BF333320719B004 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80DB6C08B9B312D2B623E23F6515C0A5 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = 2D2221399944C932229632DA5E994BCD /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -445,7 +514,7 @@
 		};
 		C44FF1034271A0DF9174FA3E91B6D082 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80DB6C08B9B312D2B623E23F6515C0A5 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = 2D2221399944C932229632DA5E994BCD /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

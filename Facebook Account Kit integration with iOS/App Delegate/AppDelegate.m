@@ -7,19 +7,31 @@
 //
 
 #import "AppDelegate.h"
+#import "LoginViewController.h"
+#import "AccountViewController.h"
+#import <AccountKit/AKFSkinManager.h>
+#import <AccountKit/AKFViewController.h>
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
+@synthesize accountKit;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  // Override point for customization after application launch.
+  
+  //Refer to this documentation
+  //https://developers.facebook.com/docs/accountkit/ios
+  
+  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+  accountKit = [[AKFAccountKit alloc] initWithResponseType: AKFResponseTypeAccessToken];
+  LoginViewController *loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+  self.window.rootViewController = loginViewController;
+  [self.window makeKeyAndVisible];
   return YES;
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
   // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

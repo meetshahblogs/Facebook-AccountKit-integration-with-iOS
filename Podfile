@@ -8,4 +8,6 @@ target 'Facebook Account Kit integration with iOS' do
   # Pods for Facebook Account Kit integration with iOS
 
   pod 'MBProgressHUD', '~> 1.1.0'
+  pod 'AccountKit'
+
 end

@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "AccountViewController.h"
 #import <AccountKit/AKFViewController.h>
 #import <AccountKit/AccountKit.h>
 
@@ -24,16 +25,14 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   
-  if (_accountKit == nil) {
-    _accountKit = [[AKFAccountKit alloc] initWithResponseType:AKFResponseTypeAccessToken];
-  }
+  _accountKit = [[AKFAccountKit alloc] initWithResponseType:AKFResponseTypeAccessToken];
+  //  NSLog(@"%@", _accountKit.currentAccessToken.accountID);
   
-  _pendingLoginViewController = [_accountKit viewControllerForEmailLogin];
+  _pendingLoginViewController = [_accountKit viewControllerForLoginResume];
 }
 
 -(void) viewWillAppear:(BOOL)animated {
   [super viewWillAppear: animated];
-
   if (_pendingLoginViewController != nil) {
     [self _prepareLoginViewController:_pendingLoginViewController];
     [self presentViewController:_pendingLoginViewController animated:animated completion:NULL];
@@ -72,7 +71,7 @@
 - (void)_prepareLoginViewController:(UIViewController<AKFViewController> *)loginViewController
 {
   loginViewController.delegate = self;
-  loginViewController.uiManager = [[AKFSkinManager alloc] initWithSkinType:AKFSkinTypeClassic];
+  loginViewController.uiManager = [[AKFSkinManager alloc] initWithSkinType:AKFSkinTypeClassic primaryColor:[UIColor blueColor]];
 }
 
 

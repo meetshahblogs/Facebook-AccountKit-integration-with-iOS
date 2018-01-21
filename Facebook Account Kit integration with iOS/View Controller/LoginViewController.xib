@@ -8,6 +8,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arial.ttf">
+            <string>ArialMT</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
             <connections>
@@ -19,31 +24,52 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login View Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSI-cu-D5S">
-                    <rect key="frame" x="85" y="109" width="205" height="82"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJB-TH-S9f">
-                    <rect key="frame" x="100" y="340" width="170" height="46"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Login with Email"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJB-TH-S9f">
+                    <rect key="frame" x="51" y="429" width="272" height="45"/>
+                    <color key="backgroundColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Bvd-0S-A7c"/>
+                    </constraints>
+                    <state key="normal" title="Login with Email">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                     <connections>
                         <action selector="loginWithEmail:" destination="-1" eventType="touchUpInside" id="k8M-RZ-6hR"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHC-Ga-kT8">
-                    <rect key="frame" x="126" y="424" width="118" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Login with Phone"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHC-Ga-kT8">
+                    <rect key="frame" x="51" y="490" width="272" height="45"/>
+                    <color key="backgroundColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Login with Phone">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                     <connections>
                         <action selector="loginWithPhone:" destination="-1" eventType="touchUpInside" id="jLy-YO-dp0"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login View Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSI-cu-D5S">
+                    <rect key="frame" x="85" y="86" width="205" height="82"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="82" id="32d-6s-A4a"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="19"/>
+                    <color key="textColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="EJB-TH-S9f" secondAttribute="bottom" constant="193" id="5gP-Xl-9Z5"/>
+                <constraint firstItem="gSI-cu-D5S" firstAttribute="centerX" secondItem="EJB-TH-S9f" secondAttribute="centerX" id="DnM-6b-JjA"/>
+                <constraint firstItem="EJB-TH-S9f" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="51" id="PGW-zf-UWh"/>
+                <constraint firstItem="gSI-cu-D5S" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="66" id="SPV-WL-e9E"/>
+                <constraint firstItem="qHC-Ga-kT8" firstAttribute="leading" secondItem="EJB-TH-S9f" secondAttribute="leading" id="aKi-XQ-35f"/>
+                <constraint firstItem="gSI-cu-D5S" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="85" id="bI6-vK-mob"/>
+                <constraint firstItem="EJB-TH-S9f" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cqZ-fb-EPS"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="qHC-Ga-kT8" secondAttribute="bottom" constant="132" id="jMX-Qr-RQL"/>
+                <constraint firstItem="qHC-Ga-kT8" firstAttribute="top" secondItem="EJB-TH-S9f" secondAttribute="bottom" constant="16" id="mWO-g8-0o5"/>
+                <constraint firstItem="qHC-Ga-kT8" firstAttribute="trailing" secondItem="EJB-TH-S9f" secondAttribute="trailing" id="w9h-Ne-KEx"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="33.5" y="58.5"/>
         </view>

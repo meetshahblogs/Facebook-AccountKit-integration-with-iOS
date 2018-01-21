@@ -22,13 +22,20 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   
   //Refer to this documentation
+  //https://developers.facebook.com/products/account-creation
   //https://developers.facebook.com/docs/accountkit/ios
   
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
   accountKit = [[AKFAccountKit alloc] initWithResponseType: AKFResponseTypeAccessToken];
-  LoginViewController *loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
-  self.window.rootViewController = loginViewController;
+  if (accountKit.currentAccessToken) {
+    AccountViewController *accountViewController = [[AccountViewController alloc] initWithNibName:@"AccountViewController" bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:accountViewController];
+    self.window.rootViewController = navController;
+  } else {
+    LoginViewController *loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+    self.window.rootViewController = loginViewController;
+  }
   [self.window makeKeyAndVisible];
   return YES;
 }

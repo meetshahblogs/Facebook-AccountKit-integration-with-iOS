@@ -8,24 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		15BD365C201430FC00EAFCF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BD365B201430FC00EAFCF3 /* AppDelegate.m */; };
-		15BD365F201430FC00EAFCF3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BD365E201430FC00EAFCF3 /* ViewController.m */; };
-		15BD3662201430FC00EAFCF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15BD3660201430FC00EAFCF3 /* Main.storyboard */; };
 		15BD3664201430FC00EAFCF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15BD3663201430FC00EAFCF3 /* Assets.xcassets */; };
-		15BD3667201430FC00EAFCF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15BD3665201430FC00EAFCF3 /* LaunchScreen.storyboard */; };
 		15BD366A201430FC00EAFCF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BD3669201430FC00EAFCF3 /* main.m */; };
+		FFA492DCA3705BB6E628AF71 /* libPods-Facebook Account Kit integration with iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0D31CEE4B1377C2EF042DD /* libPods-Facebook Account Kit integration with iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		15BD3657201430FC00EAFCF3 /* Facebook Account Kit integration with iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Facebook Account Kit integration with iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15BD365A201430FC00EAFCF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		15BD365B201430FC00EAFCF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		15BD365D201430FC00EAFCF3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		15BD365E201430FC00EAFCF3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		15BD3661201430FC00EAFCF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15BD3663201430FC00EAFCF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		15BD3666201430FC00EAFCF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15BD3668201430FC00EAFCF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15BD3669201430FC00EAFCF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		894E3891B6F7F87BEDD90663 /* Pods-Facebook Account Kit integration with iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook Account Kit integration with iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Facebook Account Kit integration with iOS/Pods-Facebook Account Kit integration with iOS.release.xcconfig"; sourceTree = "<group>"; };
+		8B0D31CEE4B1377C2EF042DD /* libPods-Facebook Account Kit integration with iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Facebook Account Kit integration with iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEA8201798A4643D93A07D7A /* Pods-Facebook Account Kit integration with iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook Account Kit integration with iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Facebook Account Kit integration with iOS/Pods-Facebook Account Kit integration with iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFA492DCA3705BB6E628AF71 /* libPods-Facebook Account Kit integration with iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +42,8 @@
 			children = (
 				15BD3659201430FC00EAFCF3 /* Facebook Account Kit integration with iOS */,
 				15BD3658201430FC00EAFCF3 /* Products */,
+				33A28BF15D21CACB923E3570 /* Pods */,
+				EF91FBE70D24599F3737DFFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,17 +58,46 @@
 		15BD3659201430FC00EAFCF3 /* Facebook Account Kit integration with iOS */ = {
 			isa = PBXGroup;
 			children = (
-				15BD365A201430FC00EAFCF3 /* AppDelegate.h */,
-				15BD365B201430FC00EAFCF3 /* AppDelegate.m */,
-				15BD365D201430FC00EAFCF3 /* ViewController.h */,
-				15BD365E201430FC00EAFCF3 /* ViewController.m */,
-				15BD3660201430FC00EAFCF3 /* Main.storyboard */,
+				15BD36702014311800EAFCF3 /* App Delegate */,
+				15BD36712014312100EAFCF3 /* View Controller */,
 				15BD3663201430FC00EAFCF3 /* Assets.xcassets */,
-				15BD3665201430FC00EAFCF3 /* LaunchScreen.storyboard */,
 				15BD3668201430FC00EAFCF3 /* Info.plist */,
 				15BD3669201430FC00EAFCF3 /* main.m */,
 			);
 			path = "Facebook Account Kit integration with iOS";
+			sourceTree = "<group>";
+		};
+		15BD36702014311800EAFCF3 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				15BD365A201430FC00EAFCF3 /* AppDelegate.h */,
+				15BD365B201430FC00EAFCF3 /* AppDelegate.m */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		15BD36712014312100EAFCF3 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		33A28BF15D21CACB923E3570 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEA8201798A4643D93A07D7A /* Pods-Facebook Account Kit integration with iOS.debug.xcconfig */,
+				894E3891B6F7F87BEDD90663 /* Pods-Facebook Account Kit integration with iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF91FBE70D24599F3737DFFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B0D31CEE4B1377C2EF042DD /* libPods-Facebook Account Kit integration with iOS.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15BD366D201430FC00EAFCF3 /* Build configuration list for PBXNativeTarget "Facebook Account Kit integration with iOS" */;
 			buildPhases = (
+				6389408F0AAF9DB260CF528C /* [CP] Check Pods Manifest.lock */,
 				15BD3653201430FC00EAFCF3 /* Sources */,
 				15BD3654201430FC00EAFCF3 /* Frameworks */,
 				15BD3655201430FC00EAFCF3 /* Resources */,
+				DCAC16080113B660C855F9B1 /* [CP] Embed Pods Frameworks */,
+				BE7190635621FE8DCDF149C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,45 +161,74 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15BD3667201430FC00EAFCF3 /* LaunchScreen.storyboard in Resources */,
 				15BD3664201430FC00EAFCF3 /* Assets.xcassets in Resources */,
-				15BD3662201430FC00EAFCF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6389408F0AAF9DB260CF528C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Facebook Account Kit integration with iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE7190635621FE8DCDF149C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Facebook Account Kit integration with iOS/Pods-Facebook Account Kit integration with iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCAC16080113B660C855F9B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Facebook Account Kit integration with iOS/Pods-Facebook Account Kit integration with iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		15BD3653201430FC00EAFCF3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15BD365F201430FC00EAFCF3 /* ViewController.m in Sources */,
 				15BD366A201430FC00EAFCF3 /* main.m in Sources */,
 				15BD365C201430FC00EAFCF3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		15BD3660201430FC00EAFCF3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				15BD3661201430FC00EAFCF3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		15BD3665201430FC00EAFCF3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				15BD3666201430FC00EAFCF3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		15BD366B201430FC00EAFCF3 /* Debug */ = {
@@ -276,29 +337,33 @@
 		};
 		15BD366E201430FC00EAFCF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEA8201798A4643D93A07D7A /* Pods-Facebook Account Kit integration with iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQ6CCQ3QDT;
 				INFOPLIST_FILE = "Facebook Account Kit integration with iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.meetshah.Facebook-Account-Kit-integration-with-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		15BD366F201430FC00EAFCF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 894E3891B6F7F87BEDD90663 /* Pods-Facebook Account Kit integration with iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQ6CCQ3QDT;
 				INFOPLIST_FILE = "Facebook Account Kit integration with iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.meetshah.Facebook-Account-Kit-integration-with-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

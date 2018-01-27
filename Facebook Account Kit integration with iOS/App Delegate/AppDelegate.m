@@ -31,6 +31,7 @@
   if (accountKit.currentAccessToken) {
     AccountViewController *accountViewController = [[AccountViewController alloc] initWithNibName:@"AccountViewController" bundle:nil];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:accountViewController];
+    accountViewController.navigationItem.title = @"My Account";
     self.window.rootViewController = navController;
   } else {
     LoginViewController *loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];

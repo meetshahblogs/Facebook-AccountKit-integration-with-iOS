@@ -33,7 +33,12 @@
 
 -(void) viewWillAppear:(BOOL)animated {
   [super viewWillAppear: animated];
-  if (_pendingLoginViewController != nil) {
+  if (_accountKit.currentAccessToken) {
+    AccountViewController *accountViewController = [[AccountViewController alloc] initWithNibName:@"AccountViewController" bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:accountViewController];
+    accountViewController.navigationItem.title = @"My Account";
+    [self presentViewController:navController animated:YES completion:nil];
+  } else if (_pendingLoginViewController != nil) {
     [self _prepareLoginViewController:_pendingLoginViewController];
     [self presentViewController:_pendingLoginViewController animated:animated completion:NULL];
     _pendingLoginViewController = nil;
@@ -77,8 +82,10 @@
 
 
 - (IBAction)loginWithEmail:(id)sender {
-  UIViewController<AKFViewController> *viewController = [_accountKit viewControllerForEmailLoginWithEmail:nil
-                                                                                                    state:nil];
+  NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+  NSString *email = [prefs stringForKey:@"email"];
+  NSString *inputState = [[NSUUID UUID] UUIDString];
+  UIViewController<AKFViewController> *viewController = [_accountKit viewControllerForEmailLoginWithEmail:email state:inputState];
   [self _prepareLoginViewController:viewController];
   [self presentViewController:viewController animated:YES completion:NULL];
 }

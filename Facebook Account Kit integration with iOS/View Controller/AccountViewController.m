@@ -19,6 +19,9 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  
+  UIBarButtonItem *logOutButton = [[UIBarButtonItem alloc] initWithTitle:@"LogOut" style:UIBarButtonItemStylePlain target:self action:@selector(logout)];
+  self.navigationItem.rightBarButtonItem = logOutButton;
 }
 
 -(void) viewWillAppear:(BOOL)animated {
@@ -27,20 +30,29 @@
   if (_accountKit == nil) {
     _accountKit = [[AKFAccountKit alloc] initWithResponseType:AKFResponseTypeAccessToken];
     [_accountKit requestAccount:^(id<AKFAccount> account, NSError *error) {
-//      if (error != nil) {
-//        self.accountIDLabel.text = @"N/A";
-//        self.titleLabel.text = @"Error";
-//        self.valueLabel.text = [error description];
-//      } else {
-//        self.accountIDLabel.text = account.accountID;
-//        if ([account.emailAddress length] > 0) {
-//          self.titleLabel.text = @"Email Address";
-//          self.valueLabel.text = account.emailAddress;
-//        } else if ([account phoneNumber] != nil) {
-//          self.titleLabel.text = @"Phone Number";
-//          self.valueLabel.text = [account.phoneNumber stringRepresentation];
-//        }
-//      }
+
+      //Save to NSUserDefault
+      NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+
+      if (error != nil) {
+        self.accountIDLabel.text = @"N/A";
+        self.titleLabel.text = @"Error";
+        self.valueLabel.text = [error description];
+      } else {
+        self.accountIDLabel.text = account.accountID;
+        if ([account.emailAddress length] > 0) {
+          // saving an NSString
+          [prefs setObject:account.emailAddress forKey:@"email"];
+      
+          self.titleLabel.text = @"Email:";
+          self.valueLabel.text = account.emailAddress;
+        } else if ([account phoneNumber] != nil) {
+          [prefs setObject:account.phoneNumber forKey:@"phone"];
+
+          self.titleLabel.text = @"Phone:";
+          self.valueLabel.text = [account.phoneNumber stringRepresentation];
+        }
+      }
     }];
   }
   
@@ -50,10 +62,8 @@
 }
 
 #pragma mark - Helper Methods
-- (void)logout:(id)sender
-{
+- (void)logout {
   [_accountKit logOut];
-  [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 @end

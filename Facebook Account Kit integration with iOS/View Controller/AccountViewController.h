@@ -10,4 +10,8 @@
 
 @interface AccountViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *accountIDLabel;
+@property (weak, nonatomic) IBOutlet UILabel *valueLabel;
+
 @end
